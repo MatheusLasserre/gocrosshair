@@ -7,12 +7,8 @@ arch=('x86_64')
 url="https://github.com/MatheusLasserre/gocrosshair"
 license=('MIT')
 makedepends=('go' 'git')
-source=("$pkgname-$pkgver.tar.gz::${url}/archive/v${pkgver}.tar.gz"
-        "gocrosshair.desktop"
-        "gocrosshair.png::${url}/raw/main/icon.png")
-sha256sums=('SKIP'
-            'SKIP'
-            'SKIP')
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/v${pkgver}.tar.gz")
+sha256sums=('SKIP')
 
 prepare() {
   cd "$pkgname-$pkgver"
@@ -39,7 +35,6 @@ package() {
     install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
   fi
   
-  cd ..
   install -Dm644 gocrosshair.desktop "$pkgdir/usr/share/applications/gocrosshair.desktop"
-  install -Dm644 gocrosshair.png "$pkgdir/usr/share/pixmaps/gocrosshair.png"
+  install -Dm644 icon.png "$pkgdir/usr/share/pixmaps/gocrosshair.png"
 }
