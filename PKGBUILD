@@ -1,6 +1,6 @@
 # Maintainer: Matheus Lasserre <matheuslasserre3@gmail.com>
 pkgname=gocrosshair
-pkgver=1.0.2
+pkgver=1.0.3
 pkgrel=1
 pkgdesc="Lightweight, static crosshair overlay for X11/XWayland gaming"
 arch=('x86_64')
@@ -10,7 +10,7 @@ makedepends=('go' 'git')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/v${pkgver}.tar.gz"
         "gocrosshair.desktop"
         "gocrosshair.png::${url}/raw/main/icon.png")
-sha256sums=('958e11b4ee69780041c61bbc9e85b2a7836c4a1a68e2a8e9f2387badeece6ae2'
+sha256sums=('b40bdcc33fe24d3788d40174849e10186d0c06dea9af6a8990667ad2af3a5b30'
             'e9a53379e3336b386d1a1cb79e917c6da17d8c6193825343fc551ad1bb84695c'
             'ed24582550439f93f159248e03581bf047ba318cd124f7a11a566d435cd2fa31')
 
