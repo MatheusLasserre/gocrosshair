@@ -6,7 +6,7 @@ pkgdesc="Lightweight, static crosshair overlay for X11/XWayland gaming"
 arch=('x86_64')
 url="https://github.com/MatheusLasserre/gocrosshair"
 license=('MIT')
-makedepends=('go' 'git')
+makedepends=('go')
 source=("$pkgname-$pkgver.tar.gz::${url}/archive/v${pkgver}.tar.gz")
 sha256sums=('SKIP')
 
