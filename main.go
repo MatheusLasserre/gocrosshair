@@ -220,16 +220,18 @@ func main() {
 
 	if *runSetup {
 		if !runSetupWizard(cfgPath) {
-			// User cancelled, exit
 			os.Exit(0)
 		}
-		// Continue to start the crosshair after successful setup
 	}
 
+	// Toggle behavior: if already running, stop it instead of starting another
 	if pid, err := readPIDFile(); err == nil && isProcessRunning(pid) {
-		fmt.Printf("Crosshair is already running (PID %d).\n", pid)
-		fmt.Println("To stop: gocrosshair -stop")
-		os.Exit(1)
+		process, _ := os.FindProcess(pid)
+		if err := process.Signal(syscall.SIGTERM); err != nil {
+			log.Fatalf("Failed to stop running instance: %v", err)
+		}
+		fmt.Printf("✓ Crosshair stopped (PID %d)\n", pid)
+		os.Exit(0)
 	}
 
 	if daemonize() {

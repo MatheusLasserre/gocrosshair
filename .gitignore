@@ -1,5 +1,5 @@
 # Binary
-gocrosshair
+gocrosshair*
 
 # IDE
 .idea/
@@ -19,3 +19,9 @@ coverage.html
 # OS files
 .DS_Store
 Thumbs.db
+
+# Arch packaging artifacts
+pkg/
+src/
+*.pkg.tar.zst
+*.tar.gz
