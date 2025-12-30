@@ -1,0 +1,21 @@
+# Binary
+gocrosshair
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+*.o
+*.a
+*.so
+
+# Test coverage
+coverage.out
+coverage.html
+
+# OS files
+.DS_Store
+Thumbs.db

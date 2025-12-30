@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GoCrosshair
+Comment=Lightweight crosshair overlay for X11/XWayland gaming
+Exec=gocrosshair
+Icon=gocrosshair
+Terminal=false
+Categories=Game;Utility;
+Keywords=crosshair;overlay;gaming;fps;
