@@ -1,6 +1,6 @@
 # Maintainer: Matheus Lasserre <matheuslasserre3@gmail.com>
 pkgname=gocrosshair
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 pkgdesc="Lightweight, static crosshair overlay for X11/XWayland gaming"
 arch=('x86_64')
